@@ -1,0 +1,15 @@
+Rebasing in Git is a powerful tool that allows you to integrate changes from one branch into another by replaying the changes from one branch onto another. This can help create a cleaner, more linear commit history compared to merging.
+
+so to apply rebase what we can do is create multiple branches suppose we have a mian branch and a feature branch 
+feature branch have multiple commit and now we want to move all those feature made in feature branch on to the main branch the we can rebase main and get all the features from feature branch to main , it will be linear and will provide a good way to manage the main branch 
+
+so suppose we have 2 branches main and bugFix , bugFix fix the bugs and now we want to copy all the commits from bug fix to main we can do 
+
+git rebase main
+
+it will rebase the bugFix to main and all the commits will be added , main will stay as it is but commits done by main branch will be shown in bugFix
+
+
+
+
+
