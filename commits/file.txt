@@ -1,0 +1,16 @@
+this is the first file , now we will commit this file and see the changes in git hub this is the very start of git and github.
+
+
+first we will use 
+1. git status - to show all the untracked file and untracked file are all the new file or the modified files
+2. git add -  we will use the git add to stage all the git file to all untracked file will be tracked 
+     A. git add.
+     This is a very common and valid command. It stages all changes (new files, modifications, and deletions) in the current directory and all its subdirectories. Essentially, it tells Git to track changes to everything under the directory where you run this command.
+    Example:
+    If you are inside the root of your repository and run git add., it adds all changes in the repository.
+    It does not include files outside the current directory path.
+    It doesn’t stage files that are ignored by .gitignore.
+    B. git add all
+    This is not a standard Git command. If you run git add all, Git treats all as a pathspec (a file or directory called "all") and tries to stage that specific file or directory named all if it exists.
+3.  git commit -  now we will use git commit to , commit all the changes to the github. and save the file. we use commit with -m with which we can specify a message about the commit
+4. git push -  to push all the changes to the github
