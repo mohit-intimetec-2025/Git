@@ -1,0 +1,34 @@
+git rebase is a powerful command in git used to integrate changes from one branch to another 
+but unlike git merge , it rewrites commit history by moving or combining commits.
+
+when we run git rebase <base branch>
+
+git takes the commits from your current brnch and re-applies then one by one on top of the <base branch>. This creates a linear and cleaner commit history by "moving" your chnages as if they were made after the <base branch > commits.
+
+
+we use rebase for cleaner History, Easier to Navigate History, Integrate Upstream Chnages
+
+example:
+
+master :  A ------- B ------- C
+                               \
+feature:                        D ----- E
+
+
+if you run git rebase master on the feature brnach, git will
+1. temporarily set aside commits D and E
+2. move the branch pointer of feature to C
+3. reapply commits D on top of C
+
+resulting in:
+
+master : A ----- B ----- C 
+                          \
+feature :                  D' ----- E'
+
+here D' and E' are new commits based on the original changes but the new commit hashes
+
+git rebase <branch>: Rebase the current branch onto <branch>.
+git rebase -i <commit>: Interactive rebase starting from <commit> (usually to clean up commits before merging).
+git rebase --abort: Abort an in-progress rebase and return to the pre-rebase state.
+git rebase --continue: Continue rebasing after resolving conflicts.
