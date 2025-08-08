@@ -1,0 +1,6 @@
+there are mutliple ways to create a brnach in git. the most common command to create a branch is git branch <branch_name>
+
+1. git branch <branch_name> - it will create a new branch at the HEAD 
+2. git checkout <branch_name> - it will create a new branch if not already exit in the repo. and change the current branch to the new branch name
+3. git status , git add . , git commit , and git push - to push all the change in the new branch and we can see all the changes only in the new branch not in the main branch 
+
